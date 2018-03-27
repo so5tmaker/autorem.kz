@@ -2,7 +2,7 @@ $lt-gray: #ddd;
 $background-dark: #283593;
 $background-light: #3949AB;
 $background-pale: #9FA8DA;
-$font-color: #e1f5fe;
+$font-color: #b5c5cc;
 // Height variables
 $carousel-item-height: 300px;
 @mixin zero-margin($pad-up-dn, $pad-left-right) {
@@ -62,6 +62,9 @@ body {
             top: 0;
             left: 0;
             min-height: 300px;
+        }
+        p {
+            color: $font-color;
         }
     }
 }

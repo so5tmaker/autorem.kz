@@ -17,7 +17,7 @@
   margin: 0px auto;
   padding: 70px 30px;
   background: #3949AB;
-  color: #e1f5fe; }
+  color: #b5c5cc; }
 
 address {
   font-size: 80%;
@@ -46,6 +46,8 @@ body {
       top: 0;
       left: 0;
       min-height: 300px; }
+    .carousel .carousel-item p {
+      color: #b5c5cc; }
 
 #carousel-button {
   right: 0px;
