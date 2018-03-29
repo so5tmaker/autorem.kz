@@ -58,6 +58,11 @@ gulp.task('robot', function () {
         .pipe(gulp.dest('./dist'));
 });
 
+gulp.task('sitemap', function () {
+    gulp.src('./sitemap.xml')
+        .pipe(gulp.dest('./dist'));
+});
+
 // Images
 gulp.task('imagemin', function () {
     return gulp.src('img/**/*.{png,jpg,gif}')
@@ -81,5 +86,5 @@ gulp.task('usemin', function () {
 });
 
 gulp.task('build', ['clean'], function () {
-    gulp.start('copyfonts', 'robot', 'imagemin', 'usemin');
+    gulp.start('copyfonts', 'robot', 'sitemap', 'imagemin', 'usemin');
 });

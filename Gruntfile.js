@@ -72,6 +72,17 @@ module.exports = function (grunt) {
                         src: ['robot.txt'],
                         dest: 'dist'
                     }]
+            },
+            sitemap: {
+                files: [
+                    {
+                        //for font-awesome
+                        expand: true,
+                        dot: true,
+                        cwd: './',
+                        src: ['sitemap.xml'],
+                        dest: 'dist'
+                    }]
             }
         },
         clean: {

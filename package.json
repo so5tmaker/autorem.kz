@@ -13,9 +13,10 @@
     "clean": "rimraf dist",
     "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
     "copyrobot": "copyfiles robot.txt dist/",
+    "copysitemap": "copyfiles sitemap.xml dist/",
     "imagemin": "imagemin img/* -o dist/img/",
     "usemin": "usemin menu.html -d dist --htmlmin -o dist/menu.html && usemin contactus.html -d dist --htmlmin -o dist/contactus.html && usemin aboutus.html -d dist --htmlmin -o dist/aboutus.html && usemin index.html -d dist --htmlmin -o dist/index.html",
-    "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run copyrobot && npm run usemin"
+    "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run copyrobot && npm run copysitemap && npm run usemin"
   },
   "author": "",
   "license": "ISC",
