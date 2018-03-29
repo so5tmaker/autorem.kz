@@ -61,6 +61,17 @@ module.exports = function (grunt) {
                         src: ['fonts/*.*'],
                         dest: 'dist'
                     }]
+            },
+            robot: {
+                files: [
+                    {
+                        //for font-awesome
+                        expand: true,
+                        dot: true,
+                        cwd: './',
+                        src: ['robot.txt'],
+                        dest: 'dist'
+                    }]
             }
         },
         clean: {
