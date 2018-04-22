@@ -54,7 +54,7 @@ gulp.task('copyfonts', function () {
 });
 
 gulp.task('robot', function () {
-    gulp.src('./robot.txt')
+    gulp.src('./robots.txt')
         .pipe(gulp.dest('./dist'));
 });
 

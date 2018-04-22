@@ -69,7 +69,7 @@ module.exports = function (grunt) {
                         expand: true,
                         dot: true,
                         cwd: './',
-                        src: ['robot.txt'],
+                        src: ['robots.txt'],
                         dest: 'dist'
                     }]
             },
